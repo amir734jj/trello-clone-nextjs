@@ -1,6 +1,8 @@
 # trello-clone-nextjs
 
-Tello clone using next.js and postgres.
+Tello clone using react-trello, next.js and postgres.
+
+URL: https://trello-clone-nextjs.herokuapp.com/
 
 ---
 
