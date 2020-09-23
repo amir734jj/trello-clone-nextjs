@@ -15,7 +15,7 @@ export default class TrelloBoard extends React.Component {
     return this.setState({data: json});
   }
 
-  async updateBoard(newBoard) {
+  updateBoard = async (newBoard) => {
     await fetch(`/api/board/${this.props.name}`, {
       method: 'PUT',
       headers: {
@@ -30,9 +30,9 @@ export default class TrelloBoard extends React.Component {
     let {data} = this.state;
     return data ? (
       <div>
-        <Board data={data} editable={true} canAddLanes={true} onDataChange={this.updateBoard} draggable/>
+        <Board data={data} editLaneTitle={true} editable={true} canAddLanes={true} onDataChange={this.updateBoard} draggable/>
       </div>
-    ) : <p>loading ...</p>;
+    ) : <p>Loading ...</p>;
   }
 }
 

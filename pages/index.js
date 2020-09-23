@@ -25,7 +25,7 @@ export default function Home() {
         <App/>
       </main>
 
-      <footer>Fall 2020 - Amir Hesamian</footer>
+      <footer className="footer">Fall 2020 - Amir Hesamian</footer>
     </div>
   );
 }

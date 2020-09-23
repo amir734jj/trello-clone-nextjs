@@ -43,7 +43,7 @@ export default class Welcome extends Component {
           <input type="text" className="form-control" id="name" placeholder="test" value={this.state.owner} name="owner" onChange={this.updateWip}/>
         </div>
         <div className="col-auto">
-          <button type="button" className="btn btn-primary mb-3" onClick={this.handleSubmit}>Submit</button>
+          <button type="button" className="btn btn-primary mb-3" onClick={this.handleSubmit}>Enter</button>
         </div>
       </div>
     );
