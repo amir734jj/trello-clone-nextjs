@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "bootstrap": "^5.0.0-alpha1",
     "next": "9.5.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "postgres": "^1.0.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-trello": "^2.2.8"
   }
 }
