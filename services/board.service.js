@@ -5,7 +5,7 @@ const sql = postgres(process.env.DATABASE_URL, {ssl: {rejectUnauthorized: false}
 
 export async function addNewBoard(name) {
   const [new_board] = await sql`
-  insert into boards (name, data) values (${name}, ${sql.json(boardDefault)}) ON CONFLICT DO NOTHING/UPDATE
+  insert into boards (name, data) values (${name}, ${sql.json(boardDefault)}) ON CONFLICT(name) DO NOTHING
   returning *
 `;
   return new_board;
